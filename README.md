@@ -35,7 +35,9 @@ riscv64-unknown-elf-gcc -v
 但是，需要在Cmake的选项卡中指定一下工具链，这样CLion才会用新添加的工具链
 ![](https://picx.zhimg.com/80/v2-fa47f635b53309b1c9c54a0230dbfd2d_1440w.png)
 Q：为啥用Release？
+
 A：他原来就用的Release。
+
 PS：勾上图里的那个选项开发体验有巨大提升。
 ### Cmakelist.txt
 重头戏来了（太折磨了）
@@ -74,7 +76,9 @@ include_directories(
   
 # 添加所有源文件  
 file(GLOB_RECURSE SOURCES "galaxy_sdk/bsp/src/*.*"  
-        "galaxy_sdk/drivers/src/*.*"        "galaxy_sdk/src/*.*"        "galaxy_sdk/*.*")  
+        "galaxy_sdk/drivers/src/*.*"
+        "galaxy_sdk/src/*.*"
+        "galaxy_sdk/*.*")  
   
 # 链接器脚本  
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/galaxy_sdk/n309_iot_qemu.ld)  
