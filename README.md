@@ -155,7 +155,8 @@ add_custom_command(TARGET ${PROJECT_NAME}.out POST_BUILD
 add_custom_target(clean_all  
         COMMAND ${CMAKE_COMMAND} -E rm -rf ${CMAKE_BINARY_DIR}/*.o ${CMAKE_BINARY_DIR}/*.d ${CMAKE_BINARY_DIR}/*.out ${CMAKE_BINARY_DIR}/*.hex ${CMAKE_BINARY_DIR}/*.lst ${CMAKE_BINARY_DIR}/*.siz  
         COMMENT "Cleaning up generated files"  
-)```
+)
+```
 #### 几个需要强调的地方
 ~~1. 我这里是手动指定了编译器的位置，因为我测试的时候发现即使我添加了环境变量Cmake仍然识别不到~~
 byd，又好使了
