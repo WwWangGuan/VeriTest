@@ -1,6 +1,6 @@
 省流：能代码补全，编译结果有问题，CLion的远程调试能接上qemu，但是程序都似了有没有什么用，建议ntr开发，Clion写代码Esclipse编译Debug。
 # 为什么要做IDE替换
-众所周知，基于Eclipse开发的嵌入式IDE，像Ti的CCS，英飞凌的ADS，瑞萨~~(史中史)~~ ，以及ST的STM32CubeIDE，虽然厂商做了一定程度上的支持，但是用起来非常的一眼难尽。
+众所周知，基于Eclipse开发的嵌入式IDE，像Ti的CCS，英飞凌的ADS，瑞萨(~~史中史~~) ，以及ST的STM32CubeIDE，虽然厂商做了一定程度上的支持，但是用起来非常的一眼难尽。
 ![](https://picx.zhimg.com/80/v2-9d8193126d77f9575c62e1a8440fd370_1440w.png)
 而STM32早已支持Cmake与Clion搭配进行项目配置与开发，开发体验有了质的提升，因此，***我想探索一种通用性的解决办法，即Eclipse在编译时生成的Makefile文件进行逆推导得到Cmakelist，进而能够搭配代码开发体验较好的IDE进行开发编译与调试。***
 需要提醒的是，在撰写本文时，虽然能够得到编译成功的结果，但是与Eclipse编译结果不同，仍然在解决中，但是可以将Clion作为代码编辑器进行代码编写，在Eclipse进行编译运行与调试。
@@ -193,7 +193,7 @@ C:\Users\34789\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCM
 ### 最终效果
 ![](https://picx.zhimg.com/80/v2-ebca35fb7dd940600576cc6480127534_1440w.png)
 
-愉 快 的 代 码 书 写 体 验~~（双手指天）~~
+愉 快 的 代 码 书 写 体 验（~~双手指天~~）
 # 编译问题
 ![](https://pic1.zhimg.com/80/v2-f0233efd30cc57f321198df0f2433521_1440w.png)
 
